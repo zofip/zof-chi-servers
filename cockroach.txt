@@ -1,0 +1,12 @@
+CREATE TABLE servers (
+    server_id SERIAL PRIMARY KEY,
+    address STRING(100),
+    ssl_grade STRING(100),
+    country STRING(100),
+    owner STRING(100),
+    servers_changed BOOL,
+    previous_ssl_grade STRING(50),
+    logo STRING(100),
+    title STRING(100),
+    is_down BOOL
+);
